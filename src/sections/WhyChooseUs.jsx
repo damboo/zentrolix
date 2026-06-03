@@ -1,8 +1,10 @@
 const points = [
-  'Business-focused technology solutions',
-  'Modern scalable architecture',
-  'Reliable communication and support',
-  'Efficient project execution',
+  'Expert IT Consulting Services',
+  'Complete IT Solutions Under One Roof',
+  'End-to-End Automotive Testing',
+  'Innovative Hardware Design & Development',
+  'Comprehensive HR & Talent Acquisition',
+  'Your Single-Point Solution Provider',
 ]
 
 export default function WhyChooseUs() {

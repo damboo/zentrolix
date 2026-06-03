@@ -1,17 +1,9 @@
-const insights = [
-  {
-    title: 'Digital Transformation',
-    description: 'Modern businesses require scalable digital systems to remain competitive and efficient.',
-  },
-  {
-    title: 'Cloud Infrastructure',
-    description: 'Cloud platforms improve flexibility, security, and operational efficiency.',
-  },
-  {
-    title: 'Business Automation',
-    description: 'Automation helps businesses streamline workflows and reduce operational overhead.',
-  },
-]
+const expertise = [
+  "Certification and development of automotive components and vehicle",
+  "Automotive Components Development",
+  "Li-Battery",
+  "Engine & CNG/LPG",
+];
 
 export default function Insights() {
   return (
@@ -24,14 +16,21 @@ export default function Insights() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {insights.map((item) => (
-            <div key={item.title} className="card p-8">
-              <h3 className="text-2xl font-semibold">{item.title}</h3>
-              <p className="mt-4 text-slate-600">{item.description}</p>
+        <div className="grid gap-6 md:grid-cols-2">
+          {expertise.map((item, index) => (
+            <div
+              key={item}
+              className="flex items-center gap-5 rounded-2xl border bg-white p-6"
+            >
+              <span className="text-4xl font-bold text-primary/20">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
+              <h3 className="text-lg font-semibold">{item}</h3>
             </div>
           ))}
         </div>
       </div>
     </section>
- )}
+  );
+}
